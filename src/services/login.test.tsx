@@ -1,4 +1,4 @@
-import { login } from "./login"
+import { LoginAlert } from "./login"
 
 describe('login', () => {
 
@@ -6,7 +6,7 @@ describe('login', () => {
     window.alert = mockAlert
 
     it('Deve exibir um alert com boas vindas', () => {
-        login()
-        expect(mockAlert).toHaveBeenCalledWith('Bem vinda!')
+        LoginAlert()
+        expect(mockAlert).toHaveBeenCalledWith('Bem vindo(a)!')
     })
 })
